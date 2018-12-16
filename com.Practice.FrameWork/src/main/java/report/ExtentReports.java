@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeSuite;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-import utilities.Contants;
+import utilities.Constants;
 
 public class ExtentReports {
 
@@ -20,8 +20,8 @@ public class ExtentReports {
 
 	@BeforeSuite
 	public void startReport() {
-		html = new ExtentHtmlReporter(Contants.reportPath);
-		html.loadXMLConfig(Contants.reportXML);		
+		html = new ExtentHtmlReporter(Constants.reportPath);
+		html.loadXMLConfig(Constants.reportXML);		
 		report = new com.aventstack.extentreports.ExtentReports();		
 		report.attachReporter(html);
 	}
