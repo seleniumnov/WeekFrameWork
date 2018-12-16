@@ -22,10 +22,7 @@ public class ReadExcel {
 	public static String key;
 	public static String value;
 
-	public static void main(String[] args) {
-
-		readData(Constants.excelPath, "login", "CRMLogin");
-	}
+	
 
 	public static Map<String, String> readData(String path, String sheetName, String testCasename) {
 
