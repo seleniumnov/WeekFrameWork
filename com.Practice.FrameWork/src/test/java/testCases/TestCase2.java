@@ -24,7 +24,6 @@ public class TestCase2 extends GenericMethods {
 	
 	Map<String, String> testData = ReadExcel.readData(Constants.excelPath, "login", "CRMLogin");
 	
-
 	@Test(priority=0)
 	public void login() {
 		
