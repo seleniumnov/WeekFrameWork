@@ -11,7 +11,7 @@ public class Constants {
 	public static String reportXML = "./XMLFiles/Extent-Config.xml";
 	
 	//Excel path
-	public static String excelPath = "./TestData/TestData.xlsx";
+	public static String excelPath = System.getProperty("user.dir")+"/TestData/TestData.xlsx";
 	
 	//Properties Path
 	public static String propPath = "./Validations/FlagMessages.properties";
