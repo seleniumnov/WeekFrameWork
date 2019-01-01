@@ -9,28 +9,18 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.GenericMethods;
 
 public class TestCase1 extends GenericMethods {
 
+	@Test
 	public void TC001() {
 
 		try {
-			// System.setProperty(Contants.chromeKey, Contants.chromeExe);
-			driver.get("https://www.freecrm.com");
-			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-			Thread.sleep(3000);
-			driver.manage().window().maximize();
-
-			// HomePage home = PageFactory.initElements(driver, HomePage.class);
-			// FBHomePage fbHome=PageFactory.initElements(driver, FBHomePage.class);
-			// fbHome.getUsername().sendKeys("test");
-			// home.userName.sendKeys("jagadeesh232708");
-			// home.passWord.sendKeys("jagadeeshjaggu");
-			// home.login.click();
-
+			
 			WebElement username = driver.findElement(By.xpath("//input[@name='username']"));
 			username.sendKeys("jagadeesh232708");
 			WebElement password = driver.findElement(By.xpath("//input[@name='password']"));

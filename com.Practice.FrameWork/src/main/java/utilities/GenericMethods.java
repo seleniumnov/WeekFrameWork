@@ -109,7 +109,7 @@ public class GenericMethods extends ExtentReports {
 			logger.addScreenCaptureFromPath(screenlocation);
 
 		} else if (result.getStatus() == ITestResult.SKIP) {
-
+			
 			logger.log(Status.SKIP, result.getName() + " is not executed due to ");
 			logger.log(Status.SKIP, result.getThrowable());
 		}
